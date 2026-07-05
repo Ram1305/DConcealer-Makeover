@@ -21,7 +21,8 @@
       "Bash(curl -s -e \"http://localhost:3001/\" -A \"Mozilla/5.0\" -o mobile_hero_withref.jpg \"https://lh3.googleusercontent.com/aida/AP1WRLufZ9yuuacBMmV1adv0338cfy7R86dNWcMxJjr_kPcsdSblXeqDtsdMvaywNNsts3hZHwnVcdM70Inuymbbcrfzog9smgL416JGdAPji6UHynBu1BoXmQCJMzAU8BrjGQeO2MSFpbvDZMR_ElI26Mkp1M7wA-F2qZCx5wGJeSjs_TtZsx7YNZs8NQrVZTSqVoTu79x8yYn3mJqu9uWw0P69pLSNv0Cl4DLOIfZ7gcS4Rp1L7VvtRhlYOHw\")",
       "Bash(md5sum mobile_hero_orig.jpg mobile_hero_withref.jpg)",
       "Bash(timeout 30 bash -c 'until curl -sf http://localhost:3002 >/dev/null || curl -sf http://localhost:3001 >/dev/null || curl -sf http://localhost:3000 >/dev/null; do sleep 1; done')",
-      "Bash(rm -f \"C:\\\\Users\\\\Jeyaram\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Jeyaram-Downloads-dconcealer-makeover-dconcealer-makeover\\\\0dc4032b-81f6-46d6-8ebf-065a9b76a3ef\\\\scratchpad\"/*.js \"C:\\\\Users\\\\Jeyaram\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Jeyaram-Downloads-dconcealer-makeover-dconcealer-makeover\\\\0dc4032b-81f6-46d6-8ebf-065a9b76a3ef\\\\scratchpad\"/*.png 2>/dev/null; echo done)"
+      "Bash(rm -f \"C:\\\\Users\\\\Jeyaram\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Jeyaram-Downloads-dconcealer-makeover-dconcealer-makeover\\\\0dc4032b-81f6-46d6-8ebf-065a9b76a3ef\\\\scratchpad\"/*.js \"C:\\\\Users\\\\Jeyaram\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Jeyaram-Downloads-dconcealer-makeover-dconcealer-makeover\\\\0dc4032b-81f6-46d6-8ebf-065a9b76a3ef\\\\scratchpad\"/*.png 2>/dev/null; echo done)",
+      "WebFetch(domain:www.instagram.com)"
     ],
     "additionalDirectories": [
       "C:\\Users\\Jeyaram\\AppData\\Local\\Temp\\claude\\c--Users-Jeyaram-Downloads-dconcealer-makeover-dconcealer-makeover\\0dc4032b-81f6-46d6-8ebf-065a9b76a3ef\\scratchpad"
