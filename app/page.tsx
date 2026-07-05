@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Terms from "@/components/Terms";
 import Contact from "@/components/Contact";
+import InstagramFeed from "@/components/InstagramFeed";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Testimonials />
       <Terms />
       <Contact />
+      <InstagramFeed />
       <Footer />
     </main>
   );

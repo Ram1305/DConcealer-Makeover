@@ -166,3 +166,19 @@ export const navLinks = [
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
 ];
+
+export const instagramHandle = "@d__concealer";
+export const instagramUrl = "https://www.instagram.com/d__concealer/";
+
+export const instagramPosts = [
+  { id: 1, img: "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?w=500&q=80" },
+  { id: 2, img: "https://images.unsplash.com/photo-1631549424057-403e75d68e2f?w=500&q=80" },
+  { id: 3, img: "https://images.unsplash.com/photo-1626496151483-c16515f579ea?w=500&q=80" },
+  { id: 4, img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=500&q=80" },
+  { id: 5, img: "https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?w=500&q=80" },
+  { id: 6, img: "https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=500&q=80" },
+  { id: 7, img: "https://images.unsplash.com/photo-1610047614301-13c63f00c032?w=500&q=80" },
+  { id: 8, img: "https://images.unsplash.com/photo-1692850852630-495a2145c2a4?w=500&q=80" },
+  { id: 9, img: "https://images.unsplash.com/photo-1570212773364-e30cd076539e?w=500&q=80" },
+  { id: 10, img: "https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?w=500&q=80" },
+];
