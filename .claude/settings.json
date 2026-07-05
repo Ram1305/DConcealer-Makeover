@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(timeout 40 bash -c 'until curl -sf http://localhost:3000 >/dev/null; do sleep 1; done')",
+      "Bash(chromium-cli --help)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(node shot.js full.png)",
+      "Bash(node shot2.js)",
+      "Bash(mkdir -p imgcheck)",
+      "Bash(curl -s -o imgcheck/1.jpg \"https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&q=60\")",
+      "Bash(curl -s -o imgcheck/2.jpg \"https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=60\")",
+      "Bash(curl -s -o imgcheck/3.jpg \"https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&q=60\")",
+      "Bash(curl -s -o imgcheck/5.jpg \"https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?w=400&q=60\")",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://lh3.googleusercontent.com/aida/AP1WRLufZ9yuuacBMmV1adv0338cfy7R86dNWcMxJjr_kPcsdSblXeqDtsdMvaywNNsts3hZHwnVcdM70Inuymbbcrfzog9smgL416JGdAPji6UHynBu1BoXmQCJMzAU8BrjGQeO2MSFpbvDZMR_ElI26Mkp1M7wA-F2qZCx5wGJeSjs_TtZsx7YNZs8NQrVZTSqVoTu79x8yYn3mJqu9uWw0P69pLSNv0Cl4DLOIfZ7gcS4Rp1L7VvtRhlYOHw\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://lh3.googleusercontent.com/aida-public/AB6AXuBUbFm96Zz5LAaSJ337uRZj1QpDRDVuTM5lMJVVXoJz6dsHtVjyVaabygVqLqjr7AhpDvt5Z5Km2A_EbZuieO2g3YIyhPk9ga9olU497Nva6zZ6e8IvutWwY5U-hE9As0rCPUssH7_hqjlxkfbg0XkHUk72osaXSPhf67RtNZO-QOi400JKysIRdr_vs7xvEphnKEXcIS_d8OntSJvIoORv8NDpeM56VPYsfEJKXoHtPVdvSCSdnK8YrhGlb5l9dr3nuxvyFQim9kY\")",
+      "Bash(curl -s -e \"http://localhost:3001/\" -A \"Mozilla/5.0\" -o mobile_hero_withref.jpg \"https://lh3.googleusercontent.com/aida/AP1WRLufZ9yuuacBMmV1adv0338cfy7R86dNWcMxJjr_kPcsdSblXeqDtsdMvaywNNsts3hZHwnVcdM70Inuymbbcrfzog9smgL416JGdAPji6UHynBu1BoXmQCJMzAU8BrjGQeO2MSFpbvDZMR_ElI26Mkp1M7wA-F2qZCx5wGJeSjs_TtZsx7YNZs8NQrVZTSqVoTu79x8yYn3mJqu9uWw0P69pLSNv0Cl4DLOIfZ7gcS4Rp1L7VvtRhlYOHw\")",
+      "Bash(md5sum mobile_hero_orig.jpg mobile_hero_withref.jpg)"
+    ]
+  }
+}

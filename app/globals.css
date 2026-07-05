@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: "Playfair Display", serif;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+html,
+body {
+  background-color: #121414;
+  color: #e2e2e2;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1c1c;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #e9c349, #af8d11);
+  border-radius: 999px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(30, 32, 32, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #e9c349 0%, #ffe088 50%, #e9c349 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rose-gold-glow {
+  box-shadow: 0 0 20px rgba(233, 195, 73, 0.15);
+}
+
+.rose-gold-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(233, 195, 73, 0.3);
+}
+
+.rose-gold-glow-intense {
+  box-shadow: 0 0 40px rgba(233, 195, 73, 0.3);
+}
+
+.section-padding {
+  padding-top: clamp(4rem, 8vw, 5rem);
+  padding-bottom: clamp(4rem, 8vw, 5rem);
+}
+
+.masonry-grid {
+  columns: 1;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .masonry-grid {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry-grid {
+    columns: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 380px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 30;
+  background: radial-gradient(
+    circle,
+    rgba(233, 195, 73, 0.12) 0%,
+    rgba(233, 195, 73, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
