@@ -171,16 +171,30 @@ export const instagramHandle = "@d__concealer";
 export const instagramUrl = "https://www.instagram.com/d__concealer/";
 
 export const instagramPosts = [
-  { id: 1, img: "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?w=500&q=80" },
-  { id: 2, img: "https://images.unsplash.com/photo-1631549424057-403e75d68e2f?w=500&q=80" },
-  { id: 3, img: "https://images.unsplash.com/photo-1626496151483-c16515f579ea?w=500&q=80" },
-  { id: 4, img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=500&q=80" },
-  { id: 5, img: "https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?w=500&q=80" },
-  { id: 6, img: "https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=500&q=80" },
-  { id: 7, img: "https://images.unsplash.com/photo-1610047614301-13c63f00c032?w=500&q=80" },
-  { id: 8, img: "https://images.unsplash.com/photo-1692850852630-495a2145c2a4?w=500&q=80" },
-  { id: 9, img: "https://images.unsplash.com/photo-1570212773364-e30cd076539e?w=500&q=80" },
-  { id: 10, img: "https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?w=500&q=80" },
+  {
+    id: 1,
+    url: "https://www.instagram.com/reel/DJcXKrRTRaR/",
+    img: "https://scontent.cdninstagram.com/v/t51.75761-15/496490562_17903822679169522_2667514995500674057_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=tF4YzaQ-JWQQ7kNvwFTnju1&_nc_oc=Adq-xuOPOBFmAbb8WpP8GQ3lYOcckD8l5BPagYQXthHOCvrh0OIj-1ldMLiJhB0m6gdAdjFsyLYO1_IJLL--3zx2&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UMOov6ffr4YU0rpZ5B5GYA&_nc_ss=7260f&oh=00_AQDKy4WjnaiJyFk4fuhAWhNCnsCutUiJTnx8T_TUstOAng&oe=6A5306B4",
+    alt: "DConcealer Makeover Instagram reel",
+  },
+  {
+    id: 2,
+    url: "https://www.instagram.com/reel/DHNbG0ERQYs/",
+    img: "https://scontent.cdninstagram.com/v/t51.75761-15/484214541_17897363934169522_8966750824649510395_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=JnT6-Ll1TRcQ7kNvwG4nzoF&_nc_oc=AdpS6PKIZ1Dfv1_CNbrLoXeKvSPn5m6OmgfCt_gG4ex-cYJKQDzU2DCrwT-zQBg80YhmmaCG1PqYk5mt0wbRueJH&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=ubRxHdSNOmfPwd_EUCglsg&_nc_ss=7260f&oh=00_AQB69srxgdU4Ky8Zz70GaMHZbhjLXdCvIVMRRpV8f9I7Gg&oe=6A52F329",
+    alt: "DConcealer Makeover Instagram reel",
+  },
+  {
+    id: 3,
+    url: "https://www.instagram.com/reel/DEaPlMSyumB/",
+    img: "https://scontent.cdninstagram.com/v/t51.75761-15/472492541_17888704002169522_251030699626094554_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NguKoZ9R8tsQ7kNvwHCCXBQ&_nc_oc=Adr5og-SvzfHwVpO-tptHz8KvXMmIKPQWwlx1SDLMtcw7VBHebmKqsu6rhUOvteZ56UBiEEXcGBKAp5UAlPvnnfd&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=d1iIjvwFxFIdDxTfrxvKAQ&_nc_ss=7260f&oh=00_AQB1ZPKGDfGKWvx16Ik-dWnaJ1tlN4WQt021bEPTOLolww&oe=6A52D2C3",
+    alt: "DConcealer Makeover Instagram reel",
+  },
+  {
+    id: 4,
+    url: "https://www.instagram.com/reel/DCjQ4QcSDRM/",
+    img: "https://scontent.cdninstagram.com/v/t51.75761-15/467544907_17882643732169522_4298439578911984614_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=BZ3xbcmE93IQ7kNvwHeW_z_&_nc_oc=AdpVzt8g1C88DrRQCcHYbsxbxuBMoHZhujLHeJyvriwfuuTqQCHoc729R0dgEgw9_r6yQxR4hhObXJWneCfwn_xd&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=v32sP4LlbBK-c9K-gvA12A&_nc_ss=7260f&oh=00_AQD9fjORUO8tjyICYoHxVHFelBncwVC4k2TFv9KKPJJxdg&oe=6A52F6F3",
+    alt: "DConcealer Makeover Instagram reel",
+  },
 ];
 
 export const youtubeHandle = "@D__Concealer";

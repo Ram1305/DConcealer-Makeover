@@ -61,15 +61,15 @@ export default function InstagramFeed() {
             {instagramPosts.map((post) => (
               <a
                 key={post.id}
-                href={instagramUrl}
+                href={post.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square w-[45%] flex-shrink-0 snap-start overflow-hidden rounded-xl sm:w-[30%] md:w-[19%]"
+                className="group relative aspect-square w-[70%] flex-shrink-0 snap-start overflow-hidden rounded-xl sm:w-[45%] md:w-[23%]"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={post.img}
-                  alt="DConcealer Makeover on Instagram"
+                  alt={post.alt}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
