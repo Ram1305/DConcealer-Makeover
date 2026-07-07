@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Outfit } from "next/font/google";
+import homeIcon from "@/components/assets/home.jpg";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CursorGlow from "@/components/CursorGlow";
@@ -38,6 +39,10 @@ export const metadata: Metadata = {
     description:
       "Premium HD bridal makeup, elegant hairstyles, and flawless beauty services.",
     type: "website",
+  },
+  icons: {
+    icon: [{ url: homeIcon.src, type: "image/jpeg" }],
+    apple: [{ url: homeIcon.src, type: "image/jpeg" }],
   },
 };
 

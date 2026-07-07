@@ -1,3 +1,6 @@
+import galleryT1 from "@/components/assets/t1.jpeg";
+import galleryT2 from "@/components/assets/t2.jpeg";
+
 export const packages = [
   {
     id: "bridal-hd",
@@ -78,8 +81,8 @@ export const galleryCategories = [
 ] as const;
 
 export const galleryItems = [
-  { id: 1, category: "Bridal", img: "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?w=800&q=80", caption: "Radiant HD Bridal Look" },
-  { id: 2, category: "Reception", img: "https://images.unsplash.com/photo-1631549424057-403e75d68e2f?w=800&q=80", caption: "Glamorous Reception Glow" },
+  { id: 1, category: "Bridal", img: galleryT1.src, caption: "Radiant HD Bridal Look" },
+  { id: 2, category: "Reception", img: galleryT2.src, caption: "Glamorous Reception Glow" },
   { id: 3, category: "Engagement", img: "https://images.unsplash.com/photo-1626496151483-c16515f579ea?w=800&q=80", caption: "Vibrant Engagement Charm" },
   { id: 4, category: "Traditional", img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=800&q=80", caption: "Timeless Traditional Bride" },
   { id: 5, category: "Modern Bride", img: "https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?w=800&q=80", caption: "Contemporary Bridal Edit" },
