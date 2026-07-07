@@ -16,83 +16,6 @@ export default function Gallery() {
       ? galleryItems
       : galleryItems.filter((g) => g.category === active);
 
-  const featured = filtered.find((g) => g.featured);
-  const rest = featured ? filtered.filter((g) => g.id !== featured.id) : filtered;
-
-  const renderImageCard = (
-    item: (typeof galleryItems)[number],
-    options?: { featured?: boolean; index?: number }
-  ) => {
-    const isFeatured = options?.featured;
-    const i = options?.index ?? 0;
-
-    return (
-      <motion.button
-        layout={!isFeatured}
-        key={item.id}
-        initial={{ opacity: 0, y: isFeatured ? 40 : 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        animate={isFeatured ? undefined : { opacity: 1, y: 0 }}
-        exit={isFeatured ? undefined : { opacity: 0, scale: 0.9 }}
-        transition={{ duration: 0.6, delay: isFeatured ? 0 : i * 0.05 }}
-        onClick={() => setLightbox(item)}
-        className={`group block w-full overflow-hidden glass-card ${
-          isFeatured
-            ? "mb-8 rounded-[2rem] p-3 rose-gold-glow ring-1 ring-secondary/40 md:mx-auto md:mb-12 md:max-w-3xl"
-            : "mb-6 rounded-2xl p-2"
-        }`}
-      >
-        <div className="relative w-full overflow-hidden rounded-xl">
-          <div
-            className={`relative w-full ${
-              isFeatured
-                ? "aspect-[4/5] md:aspect-[5/6]"
-                : i % 3 === 0
-                  ? "aspect-[4/5]"
-                  : i % 3 === 1
-                    ? "aspect-[3/4]"
-                    : "aspect-square"
-            }`}
-          >
-            <Image
-              src={item.img}
-              alt={item.caption}
-              fill
-              priority={isFeatured}
-              sizes={isFeatured ? "(max-width: 768px) 100vw, 768px" : "(max-width: 768px) 100vw, 33vw"}
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-          </div>
-          {isFeatured ? (
-            <>
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-surface/90 via-surface/20 to-transparent" />
-              <div className="absolute left-4 top-4 rounded-full bg-secondary px-4 py-1.5 font-label-lg text-[10px] uppercase tracking-widest text-on-secondary">
-                Featured Look
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                <p className="font-headline-md text-white md:text-2xl">{item.caption}</p>
-                <p className="mt-2 text-xs uppercase tracking-widest text-secondary">
-                  {item.category}
-                </p>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-surface/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <div className="absolute bottom-0 left-0 right-0 translate-y-4 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="font-headline-sm text-white">{item.caption}</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-secondary">
-                  {item.category}
-                </p>
-              </div>
-            </>
-          )}
-        </div>
-      </motion.button>
-    );
-  };
-
   return (
     <section id="gallery" className="bg-surface py-section-gap">
       <div className="mx-auto max-w-7xl">
@@ -132,28 +55,72 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Mobile: featured + stacked grid */}
+        {/* Mobile: single column stacked */}
         <div className="space-y-0 px-container-padding md:hidden">
-          {featured && renderImageCard(featured, { featured: true })}
-          {rest.slice(0, featured ? 5 : 6).map((item, i) => (
-            <div key={item.id} className="masonry-item">
-              {renderImageCard(item, { index: i })}
-            </div>
+          {filtered.slice(0, 6).map((item, i) => (
+            <motion.button
+              key={item.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.05 }}
+              onClick={() => setLightbox(item)}
+              className="masonry-item w-full overflow-hidden rounded-3xl glass-card"
+            >
+              <div className="relative aspect-[4/5] w-full">
+                <Image
+                  src={item.img}
+                  alt={item.caption}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </motion.button>
           ))}
         </div>
 
-        {/* Desktop: featured hero + masonry grid */}
-        <div className="hidden px-container-padding md:block">
-          {featured && renderImageCard(featured, { featured: true })}
-          <div className="masonry-grid">
-            <AnimatePresence>
-              {rest.map((item, i) => (
-                <div key={item.id} className="masonry-item">
-                  {renderImageCard(item, { index: i })}
+        {/* Desktop: masonry grid */}
+        <div className="masonry-grid hidden px-container-padding md:block">
+          <AnimatePresence>
+            {filtered.map((item, i) => (
+              <motion.button
+                layout
+                key={item.id}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                onClick={() => setLightbox(item)}
+                className="group mb-6 block w-full overflow-hidden rounded-2xl glass-card p-2"
+              >
+                <div className="relative w-full overflow-hidden rounded-xl">
+                  <div
+                    className={`relative w-full ${
+                      i % 3 === 0
+                        ? "aspect-[4/5]"
+                        : i % 3 === 1
+                          ? "aspect-[3/4]"
+                          : "aspect-square"
+                    }`}
+                  >
+                    <Image
+                      src={item.img}
+                      alt={item.caption}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-surface/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="absolute bottom-0 left-0 right-0 translate-y-4 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="font-headline-sm text-white">{item.caption}</p>
+                    <p className="mt-1 text-xs uppercase tracking-widest text-secondary">
+                      {item.category}
+                    </p>
+                  </div>
                 </div>
-              ))}
-            </AnimatePresence>
-          </div>
+              </motion.button>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 

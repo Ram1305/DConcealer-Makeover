@@ -82,15 +82,9 @@ export const galleryCategories = [
 ] as const;
 
 export const galleryItems = [
-  {
-    id: 3,
-    category: "Engagement",
-    img: galleryT3.src,
-    caption: "Signature Bridal Glow",
-    featured: true,
-  },
   { id: 1, category: "Bridal", img: galleryT1.src, caption: "Radiant HD Bridal Look" },
   { id: 2, category: "Reception", img: galleryT2.src, caption: "Glamorous Reception Glow" },
+  { id: 3, category: "Engagement", img: galleryT3.src, caption: "Vibrant Engagement Charm" },
   { id: 4, category: "Traditional", img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=800&q=80", caption: "Timeless Traditional Bride" },
   { id: 5, category: "Modern Bride", img: "https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?w=800&q=80", caption: "Contemporary Bridal Edit" },
   { id: 6, category: "Hair Styling", img: "https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=800&q=80", caption: "Signature Hair Artistry" },
