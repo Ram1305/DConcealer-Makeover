@@ -27,43 +27,73 @@ export default function Hero() {
 
   return (
     <section id="home" ref={containerRef} className="relative overflow-hidden">
-      {/* Mobile hero — code2.html */}
-      <div className="relative flex h-[90vh] flex-col justify-end overflow-hidden px-container-padding pb-stack-lg pt-24 lg:hidden">
-        <div className="absolute inset-0 z-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={homeImg.src}
-            alt="Cinematic bridal portrait"
-            className="absolute inset-0 h-full w-full scale-105 object-cover brightness-75 grayscale-[0.2]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
-        </div>
+      {/* Mobile hero — brand emblem layout */}
+      <div className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-container-padding pb-stack-lg pt-28 text-center lg:hidden">
+        {/* Ambient luxury background */}
+        <div className="absolute inset-0 -z-10 bg-ink-gradient" />
+        <div className="absolute -top-24 left-1/2 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-secondary/20 blur-[100px]" />
+        <div className="absolute bottom-0 left-1/2 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-secondary/10 blur-[90px]" />
+
+        {/* Brand emblem */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          className="relative mb-stack-md"
+        >
+          <div className="absolute inset-0 -z-10 rounded-full bg-secondary/30 blur-2xl" />
+          <div className="relative h-40 w-40 overflow-hidden rounded-full border border-secondary/40 shadow-luxury">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={homeImg.src}
+              alt="D_Concealer Makeover logo"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="animate-fade-in relative z-10 max-w-md space-y-stack-sm"
+          transition={{ duration: 1, delay: 0.15 }}
+          className="relative z-10 flex w-full max-w-sm flex-col items-center space-y-gutter"
         >
-          <h1 className="font-headline-lg-mobile text-headline-lg-mobile text-white drop-shadow-2xl">
-            Luxury Bridal Makeup Experience
+          <span className="font-label-lg text-[11px] uppercase tracking-[0.35em] text-secondary">
+            Bridal Beauty Studio
+          </span>
+
+          <h1 className="font-headline-lg-mobile text-headline-lg-mobile leading-tight text-white">
+            Luxury Bridal <br />
+            <span className="text-gradient-gold">Makeup Experience</span>
           </h1>
-          <p className="max-w-[90%] font-body-lg text-body-lg text-on-surface-variant">
+
+          {/* Gold divider */}
+          <span className="my-1 block h-px w-16 bg-gradient-to-r from-transparent via-secondary to-transparent" />
+
+          <p className="max-w-[92%] font-body-lg text-base text-on-surface-variant">
             Transform your special day with flawless HD bridal makeup artistry
             curated for the modern queen.
           </p>
-          <div className="flex flex-col gap-4 pt-base">
+
+          <div className="flex w-full flex-col gap-3 pt-base">
             <a
               href="#contact"
-              className="rounded-full bg-secondary px-8 py-4 text-center font-label-lg text-on-secondary transition-all rose-gold-glow active:scale-95"
+              className="rounded-full bg-secondary px-8 py-4 text-center font-label-lg text-on-secondary shadow-luxury transition-all rose-gold-glow active:scale-95"
             >
               Book Appointment
             </a>
             <a
               href="#packages"
-              className="glass-card rounded-full border-secondary/30 px-8 py-4 text-center font-label-lg text-white transition-all active:scale-95"
+              className="glass-card rounded-full border border-secondary/30 px-8 py-4 text-center font-label-lg text-white transition-all active:scale-95"
             >
               View Packages
             </a>
+          </div>
+
+          {/* Trust badge */}
+          <div className="flex items-center gap-2 pt-2 text-on-surface-variant">
+            <span className="text-secondary tracking-widest">★★★★★</span>
+            <span className="font-body-md text-sm">Trusted by 500+ brides</span>
           </div>
         </motion.div>
       </div>
