@@ -250,15 +250,3 @@ export const instagramPosts = [
     alt: "D_Concealer Makeover Instagram reel",
   },
 ];
-
-export const youtubeHandle = "@D__Concealer";
-export const youtubeUrl = "https://www.youtube.com/@D__Concealer";
-
-export const youtubeVideos = [
-  { id: 1, img: "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?w=700&q=80", title: "Bridal HD Makeup Transformation" },
-  { id: 2, img: "https://images.unsplash.com/photo-1610047614301-13c63f00c032?w=700&q=80", title: "Get Ready With Me: Wedding Day" },
-  { id: 3, img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=700&q=80", title: "Traditional Bridal Look Tutorial" },
-  { id: 4, img: "https://images.unsplash.com/photo-1631549424057-403e75d68e2f?w=700&q=80", title: "Reception Glam Makeup Routine" },
-  { id: 5, img: "https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=700&q=80", title: "Bridal Hairstyling Masterclass" },
-  { id: 6, img: "https://images.unsplash.com/photo-1626496151483-c16515f579ea?w=700&q=80", title: "Engagement Makeup Look Book" },
-];

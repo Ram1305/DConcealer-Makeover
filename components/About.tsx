@@ -33,7 +33,7 @@ export default function About() {
           </p>
           <div className="grid grid-cols-2 gap-stack-sm pt-base">
             <div className="flex flex-col items-center rounded-2xl border border-white/5 bg-white/5 p-stack-sm">
-              <span className="font-headline-sm text-secondary">12+</span>
+              <span className="font-headline-sm text-secondary">3+</span>
               <span className="text-[10px] font-label-lg uppercase opacity-60">
                 Years Exp
               </span>

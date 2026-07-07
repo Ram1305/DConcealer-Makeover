@@ -9,7 +9,6 @@ import Testimonials from "@/components/Testimonials";
 import Terms from "@/components/Terms";
 import Contact from "@/components/Contact";
 import InstagramFeed from "@/components/InstagramFeed";
-import YouTubeFeed from "@/components/YouTubeFeed";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -26,7 +25,6 @@ export default function Home() {
       <Terms />
       <Contact />
       <InstagramFeed />
-      <YouTubeFeed />
       <Footer />
     </main>
   );
