@@ -1,5 +1,6 @@
 import galleryT1 from "@/components/assets/t1.jpeg";
 import galleryT2 from "@/components/assets/t2.jpeg";
+import galleryT3 from "@/components/assets/t3.jpeg";
 
 export const packages = [
   {
@@ -83,7 +84,7 @@ export const galleryCategories = [
 export const galleryItems = [
   { id: 1, category: "Bridal", img: galleryT1.src, caption: "Radiant HD Bridal Look" },
   { id: 2, category: "Reception", img: galleryT2.src, caption: "Glamorous Reception Glow" },
-  { id: 3, category: "Engagement", img: "https://images.unsplash.com/photo-1626496151483-c16515f579ea?w=800&q=80", caption: "Vibrant Engagement Charm" },
+  { id: 3, category: "Engagement", img: galleryT3.src, caption: "Vibrant Engagement Charm" },
   { id: 4, category: "Traditional", img: "https://images.unsplash.com/photo-1717341829793-7dd4390e59e7?w=800&q=80", caption: "Timeless Traditional Bride" },
   { id: 5, category: "Modern Bride", img: "https://images.unsplash.com/photo-1588842867976-fd084ca2c87b?w=800&q=80", caption: "Contemporary Bridal Edit" },
   { id: 6, category: "Hair Styling", img: "https://images.unsplash.com/photo-1623428455512-264b33ca8cec?w=800&q=80", caption: "Signature Hair Artistry" },
@@ -172,6 +173,14 @@ export const navLinks = [
 
 export const instagramHandle = "@d__concealer";
 export const instagramUrl = "https://www.instagram.com/d__concealer/";
+
+export const contactPhone = {
+  display: "+91 831 031 3243",
+  tel: "+918310313243",
+  whatsapp: "918310313243",
+} as const;
+
+export const whatsappUrl = `https://wa.me/${contactPhone.whatsapp}`;
 
 export const instagramPosts = [
   {

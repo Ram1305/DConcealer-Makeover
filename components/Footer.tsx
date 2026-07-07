@@ -1,4 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
+import { whatsappUrl } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -28,7 +29,7 @@ export default function Footer() {
             <Instagram className="h-5 w-5" />
           </a>
           <a
-            href="https://wa.me/919876543210"
+            href={whatsappUrl}
             aria-label="WhatsApp"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-secondary transition-colors hover:bg-secondary/10"
           >

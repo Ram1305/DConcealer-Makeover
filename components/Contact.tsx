@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { Phone, MessageCircle, Send } from "lucide-react";
-
-const WHATSAPP_NUMBER = "919876543210";
+import { contactPhone, whatsappUrl } from "@/lib/data";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -24,7 +23,7 @@ export default function Contact() {
     ].filter(Boolean);
 
     const text = encodeURIComponent(lines.join("\n"));
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    const url = `${whatsappUrl}?text=${text}`;
 
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -99,7 +98,7 @@ export default function Contact() {
             </p>
             <div className="space-y-6">
               <a
-                href="tel:+919876543210"
+                href={`tel:${contactPhone.tel}`}
                 className="group flex items-center gap-4 text-white transition-colors hover:text-secondary"
               >
                 <div className="glass-card flex h-12 w-12 items-center justify-center rounded-full group-hover:rose-gold-glow">
@@ -109,11 +108,11 @@ export default function Contact() {
                   <div className="font-label-lg text-xs uppercase tracking-widest text-secondary">
                     Call Us
                   </div>
-                  <div className="text-xl">+91 98765 43210</div>
+                  <div className="text-xl">{contactPhone.display}</div>
                 </div>
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 text-white transition-colors hover:text-secondary"
@@ -125,7 +124,7 @@ export default function Contact() {
                   <div className="font-label-lg text-xs uppercase tracking-widest text-secondary">
                     WhatsApp
                   </div>
-                  <div className="text-xl">Inquire for Dates</div>
+                  <div className="text-xl">{contactPhone.display}</div>
                 </div>
               </a>
             </div>
