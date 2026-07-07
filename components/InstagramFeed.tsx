@@ -64,14 +64,22 @@ export default function InstagramFeed() {
                 href={post.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square w-[70%] flex-shrink-0 snap-start overflow-hidden rounded-xl sm:w-[45%] md:w-[23%]"
+                className="group relative aspect-[4/5] w-[60%] flex-shrink-0 snap-start overflow-hidden rounded-xl sm:w-[38%] md:w-[22%]"
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={post.img}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full scale-110 object-cover blur-2xl"
+                />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={post.img}
                   alt={post.alt}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-surface/20 transition-colors duration-300 group-hover:bg-surface/40" />
                 <div className="absolute inset-0 flex items-center justify-center">
