@@ -231,6 +231,12 @@ export const instagramPosts = [
     img: "https://scontent.cdninstagram.com/v/t51.75761-15/482927892_17896506825169522_6139498313348261497_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9HO_sFCTyF4Q7kNvwGH5VWq&_nc_oc=AdrzFJAszWaPcVPomBNxPKM9nWR0AMCd5tPP6NFtCvYs63XoM5n-HmSgIQyNEnJSpdId25hmGdywke8rvfC5Bj1Y&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lGzoC9RBJjUgRLeFftBj3w&_nc_ss=7260f&oh=00_AQDsB5RiHYIYzdC0iSepIw9o_PIGCztBEC0Ng0dtqDeEPg&oe=6A530389",
     alt: "DConcealer Makeover Instagram reel",
   },
+  {
+    id: 11,
+    url: "https://www.instagram.com/reel/DDgbYysyrbN/",
+    img: "https://scontent.cdninstagram.com/v/t51.75761-15/469731469_17885693409169522_361345819926641945_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cffd7X9NMMMQ7kNvwFEZtGa&_nc_oc=AdqqWfjuUyteALCMuYFQLpH2zSAVJeTWgA7lSlut_MnvHYcK2LHzaW0LJXdc2kQhgWnlYERceWp3rTjzZyWnxRlw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=eqxBMbtN6oWKPgFq_jMl_Q&_nc_ss=7260f&oh=00_AQAyAkN7-DI1qE7amGS9yit7Ybd8Y7ThrH5KNj6uejzR4Q&oe=6A52EF01",
+    alt: "DConcealer Makeover Instagram reel",
+  },
 ];
 
 export const youtubeHandle = "@D__Concealer";
