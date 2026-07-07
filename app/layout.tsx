@@ -23,18 +23,18 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "DConcealer Makeover | Luxury Bridal Makeup Studio",
+  title: "D_Concealer Makeover | Luxury Bridal Makeup Studio",
   description:
-    "Transform your wedding day into an unforgettable experience with premium HD bridal makeup, elegant hairstyles, and flawless beauty services by DConcealer Makeover.",
+    "Transform your wedding day into an unforgettable experience with premium HD bridal makeup, elegant hairstyles, and flawless beauty services by D_Concealer Makeover.",
   keywords: [
     "bridal makeup",
     "HD makeup artist",
     "wedding makeup studio",
-    "DConcealer Makeover",
+    "D_Concealer Makeover",
     "luxury bridal beauty",
   ],
   openGraph: {
-    title: "DConcealer Makeover | Luxury Bridal Makeup Studio",
+    title: "D_Concealer Makeover | Luxury Bridal Makeup Studio",
     description:
       "Premium HD bridal makeup, elegant hairstyles, and flawless beauty services.",
     type: "website",

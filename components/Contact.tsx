@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault();
 
     const lines = [
-      "*New Enquiry — D Concealer Makeover*",
+      "*New Enquiry — D_Concealer Makeover*",
       "",
       name && `*Name:* ${name}`,
       date && `*Event Date:* ${date}`,

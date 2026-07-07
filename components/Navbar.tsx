@@ -36,7 +36,7 @@ export default function Navbar() {
           href="#home"
           className="font-headline-sm text-headline-sm uppercase tracking-widest text-secondary transition-transform duration-200 hover:scale-105"
         >
-          DConcealer Makeover
+          D_Concealer Makeover
         </a>
 
         <div className="hidden items-center gap-stack-md font-label-lg text-label-lg md:flex">

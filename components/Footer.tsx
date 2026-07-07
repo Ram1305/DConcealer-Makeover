@@ -6,7 +6,7 @@ export default function Footer() {
       {/* Mobile — code2 centered */}
       <div className="flex flex-col items-center gap-stack-md px-container-padding text-center md:hidden">
         <span className="font-headline-md text-headline-md text-secondary">
-          DConcealer
+          D_Concealer
         </span>
         <div className="flex flex-wrap justify-center gap-stack-md">
           <a className="font-body-md text-on-surface-variant hover:text-secondary" href="#">
@@ -36,14 +36,14 @@ export default function Footer() {
           </a>
         </div>
         <p className="font-body-md text-[12px] text-on-surface-variant opacity-60">
-          © {new Date().getFullYear()} DConcealer Makeover. All rights reserved.
+          © {new Date().getFullYear()} D_Concealer Makeover. All rights reserved.
         </p>
       </div>
 
       {/* Desktop — code.html row */}
       <div className="mx-auto hidden max-w-7xl flex-col items-center justify-between gap-stack-md px-container-padding md:flex md:flex-row">
         <div className="font-headline-md text-headline-md text-secondary">
-          DConcealer
+          D_Concealer
         </div>
         <div className="flex flex-wrap justify-center gap-stack-md font-body-md text-on-surface-variant">
           <a className="hover:text-secondary transition-colors" href="#">
@@ -60,7 +60,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="font-body-md text-on-surface-variant">
-          © {new Date().getFullYear()} DConcealer Makeover. All rights reserved.
+          © {new Date().getFullYear()} D_Concealer Makeover. All rights reserved.
         </div>
       </div>
     </footer>

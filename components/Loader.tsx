@@ -30,7 +30,7 @@ export default function Loader() {
             transition={{ duration: 1.4, ease: "easeOut" }}
             className="font-display text-3xl tracking-widest text-gradient-gold md:text-5xl"
           >
-            DCONCEALER
+            D_CONCEALER
           </motion.div>
           <motion.span
             initial={{ opacity: 0 }}
