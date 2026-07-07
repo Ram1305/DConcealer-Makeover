@@ -4,14 +4,9 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
+import homeImg from "./assets/home.jpg";
 
 const Hero3D = dynamic(() => import("./Hero3D"), { ssr: false });
-
-const MOBILE_HERO_IMG =
-  "https://lh3.googleusercontent.com/aida/AP1WRLufZ9yuuacBMmV1adv0338cfy7R86dNWcMxJjr_kPcsdSblXeqDtsdMvaywNNsts3hZHwnVcdM70Inuymbbcrfzog9smgL416JGdAPji6UHynBu1BoXmQCJMzAU8BrjGQeO2MSFpbvDZMR_ElI26Mkp1M7wA-F2qZCx5wGJeSjs_TtZsx7YNZs8NQrVZTSqVoTu79x8yYn3mJqu9uWw0P69pLSNv0Cl4DLOIfZ7gcS4Rp1L7VvtRhlYOHw";
-
-const DESKTOP_PORTRAIT_IMG =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuBUbFm96Zz5LAaSJ337uRZj1QpDRDVuTM5lMJVVXoJz6dsHtVjyVaabygVqLqjr7AhpDvt5Z5Km2A_EbZuieO2g3YIyhPk9ga9olU497Nva6zZ6e8IvutWwY5U-hE9As0rCPUssH7_hqjlxkfbg0XkHUk72osaXSPhf67RtNZO-QOi400JKysIRdr_vs7xvEphnKEXcIS_d8OntSJvIoORv8NDpeM56VPYsfEJKXoHtPVdvSCSdnK8YrhGlb5l9dr3nuxvyFQim9kY";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,7 +32,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={MOBILE_HERO_IMG}
+            src={homeImg.src}
             alt="Cinematic bridal portrait"
             className="absolute inset-0 h-full w-full scale-105 object-cover brightness-75 grayscale-[0.2]"
           />
@@ -115,7 +110,7 @@ export default function Hero() {
               <div className="relative h-[600px] w-full overflow-hidden rounded-xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={DESKTOP_PORTRAIT_IMG}
+                  src={homeImg.src}
                   alt="Cinematic bridal portrait"
                   className="h-full w-full object-cover"
                 />
